@@ -1,0 +1,10 @@
+node_modules
+.vscode
+.cache
+dist
+benchmark*
+del*
+kmp
+rows.txt
+hafman
+suite*

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task 2</title>
+  <style>
+    .performance {
+      display: inline-block;
+    }
+
+    .search {
+      position: relative;
+      height: 230px;
+    }
+
+    .found {
+      position: absolute;
+      top: 20px;
+      /* width: 20px;
+      height: 20px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="search search--1">
+      <label for="street1">String.indexOf</label>
+      <input id="street1">
+      <div id="perf1" class="performance"></div>
+      <div class="found" id="found1"></div>
+    </div>
+    <div class="search search--2">
+      <label for="street2">Наивный алгоритм</label>
+      <input id="street2">
+      <div id="perf2" class="performance"></div>
+      <div class="found" id="found2"></div>
+    </div>
+    <div class="search search--3">
+      <label for="street3">Boyer Moore Horspul</label>
+      <input id="street3">
+      <div id="perf3" class="performance"></div>
+      <div class="found" id="found3"></div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
