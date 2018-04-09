@@ -1,6 +1,6 @@
 ### Задание 1: EventEmitter
 
-[Код](https://github.com/mrpq/shri_algos_2)
+[Код](https://github.com/mrpq/shri_algos_2/blob/master/eventEmitter.js)
 
 Для хранения используется структура данных вида
 
