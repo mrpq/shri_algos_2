@@ -85,9 +85,9 @@ class BMH {
 }
 
 const bmh = (streets, pattern) => {
-  const table = BMH.makeTable(pattern);
+  const table = BMH.makeTable(pattern.toLowerCase());
   const found = streets.reduce((acc, street, i) => {
-    const indexes = BMH.bmh(street, pattern, table, false);
+    const indexes = BMH.bmh(street, pattern.toLowerCase(), table, false);
     if (indexes.length > 0) {
       return [...acc, [street, indexes[0]]];
       // return acc;

@@ -28,7 +28,7 @@ const naiveSearch = (text, pat, all = true) => {
 
 const naive = (streets, pattern) => {
   const found = streets.reduce((acc, street, i) => {
-    const indexes = naiveSearch(street, pattern, false);
+    const indexes = naiveSearch(street, pattern.toLowerCase(), false);
     if (indexes.length > 0) {
       return [...acc, [street, indexes[0]]];
       // return acc;
